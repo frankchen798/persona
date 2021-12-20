@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CV</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $("#point1").click(function(){
+          $("#photo1").fadeIn();
+          $("#photo2").fadeOut();
+          $("#photo3").fadeOut();
+          $("#point1").css("background-color","lightseagreen");
+          $("#point2").css("background-color","black");
+          $("#point3").css("background-color","black");
+        })
+        $("#point2").click(function(){
+          $("#photo2").fadeIn();
+          $("#photo1").fadeOut();
+          $("#photo3").fadeOut();
+          $("#point2").css("background-color","lightseagreen");
+          $("#point1").css("background-color","black");
+          $("#point3").css("background-color","black");
+        })
+        $("#point3").click(function(){
+          $("#photo3").fadeIn();
+          $("#photo2").fadeOut();
+          $("#photo1").fadeOut();
+          $("#point3").css("background-color","lightseagreen");
+          $("#point2").css("background-color","black");
+          $("#point1").css("background-color","black");
+        })
+      })
+    
+    </script>
+  </head>
+  <body>
+    <div id="card">
+      <div id="photo">
+        <img src="download1.jpg" weight="238" height="244" id="photo1">
+        <img src="download2.jpg" weight="238" height="244" id="photo2">
+        <img src="download3.jpg" weight="238" height="244" id="photo3">
+        <div class="point" id="point1"></div>
+        <div class="point" id="point2"></div>
+        <div class="point" id="point3"></div>
+      </div>
+      <div id="intro">
+        <h1>Frank</h1>
+        <h2>30歲</h2>
+        <h2>工程師</h2>
+        <h2>台北</h2>
+        <h3>不一定要很厲害，才能開始</h3>
+      </div>
+      <div id="about">
+        <h4><i class="fas fa-user-circle"></i> 關於我</h4>
+        <p>我是...</p>
+        <h4>工作經驗</h4>
+        <ul>
+          <li>工程師</li>
+          <li>老師</li>
+        </ul>
+        <h4>社群連結</h4>
+        <ul>
+          <li><a href="https://www.ntu.edu.tw/english/" target:"_blank">Facebook</a></li>
+          <li>Linkdln</li>
+          <li>Instagram</li>
+        </ul>
+      </div>
+      <div id="other">
+        <h4>個性</h4>
+        <div class="block">
+          <div class="left-text">內向</div>
+          <div class="right-text">外向</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar" id="green-bar1"></div>
+        </div>
+        <div class="block">
+            <div class="left-text">理性</div>
+            <div class="right-text">感性</div>
+            <div class="gray-bar"></div>
+            <div class="green-bar"></div>
+          </div>
+          <div class="block">
+              <div class="left-text">謹慎</div>
+              <div class="right-text">冒險</div>
+              <div class="gray-bar"></div>
+              <div class="green-bar"></div>
+            </div>
+            <div class="block">
+                <div class="left-text">思考</div>
+                <div class="right-text">行動</div>
+                <div class="gray-bar"></div>
+                <div class="green-bar"></div>
+              </div>
+        <h4>技能</h4>
+        <div class="block">
+            <div class="left-text">HTML</div>
+            <div class="gray-bar"></div>
+            <div class="green-bar" id="green-bar5"></div>
+        </div>
+        <div class="block">
+            <div class="left-text">CSS</div>
+            <div class="gray-bar"></div>
+            <div class="green-bar"></div>
+        </div>
+        <div class="block">
+            <div class="left-text">JAVA</div>
+            <div class="gray-bar"></div>
+            <div class="green-bar"></div>
+        </div>
+        <div class="block">
+            <div class="left-text">React</div>
+            <div class="gray-bar"></div>
+            <div class="green-bar"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
